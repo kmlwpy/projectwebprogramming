@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>เกมตอบคำถาม</title>
+	<link rel="shortcut icon" href="img/logo1.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600&family=Exo:ital,wght@1,600&display=swap" rel="stylesheet">
+    <script src='Quiz/a076d05399.js'></script>
+    <link rel="stylesheet" href="Quiz/css/style.css">
+	<style type="text/css">* {cursor: url(https://cur.cursors-4u.net/symbols/sym-6/sym597.cur), auto !important;}</style><a href="https://www.cursors-4u.com/cursor/2011/01/26/transparent-white-star.html" target="_blank" title="Transparent White Star"><img src="https://cur.cursors-4u.net/cursor.png" border="0" alt="Transparent White Star" style="position:absolute; top: 0px; right: 0px;" /></a>
+</head>
+
+<body>
+	<img src="Quiz/cancel.png" style="height: 50px;" onClick="history.go(-1)">
+    <div id="container">
+        <!--    Start Section     -->
+        <div id="start">เริ่มเกม</div>
+
+        <!--    Guide Section    -->
+        <div id="guide">
+            <h2>เงื่อนไข</h2>
+            <h4>คุณมีเวลาในการตอบคำถามข้อละ 10 วินาที</h4>
+            
+            <div id="button">
+                <button id="exit" hidden="hidden">Exit</button>
+                <button id="continue">เริ่ม</button>
+            </div>
+        </div>
+
+        <!--    Quiz Section    -->
+        <div id="quiz">
+            <div id="quiz_header">
+                <h5>ประเพณีไทย</h5>
+                <div id="timer">
+                    <h6>   ⏳    </h6>
+                    <h6 id="time">00</h6>
+                </div>
+            </div>
+
+            <!--     Quiz Questions  -->
+
+            <div id="question">
+                <h2 id="questionNo"></h2>
+                <h2 id="questionText"></h2>
+            </div>
+
+            <!--       Quiz Choices   -->
+
+            <div id="optionList">
+                <h4 class="choice_que" id="option1"></h4>
+                <h4 class="choice_que" id="option2"></h4>
+                <h4 class="choice_que" id="option3"></h4>
+                <h4 class="choice_que" id="option4"></h4>
+            </div>
+
+            <!--  Answers Section-->
+
+            <div id="answersSection">
+                <h3 id="total_correct">3 Of 10 Questions</h3>
+                <h3 id="next_question">ถัดไป</h3>
+            </div>
+        </div>
+        <!--   Result Section  -->
+        <div id="result">
+            <i class="fas fa-trophy"></i>
+            <h6>คุณตอบคำถามครบแล้ว</h6>
+            <h6 id="points">You Got 4 Out Of 10</h6>
+            <button id="quit" hidden="hidden">Quit Quiz</button>
+            <button id="startAgain">เริ่มใหม่</button>
+        </div>
+    </div>
+    <script src="Quiz/js/questions.js"></script>
+    <script src="Quiz/js/script.js"></script>
+</body><br><br>
+	<footer><img style="height: 50px; text-align: left" onClick="history.go(-1)"></footer>
+
+</html>
